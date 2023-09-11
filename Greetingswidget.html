@@ -97,11 +97,11 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
         if (hrs < 12)
-            greet = 'Bom dia  '+name;
+            greet = 'Good Morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Boa tarde '+name;
+            greet = 'Good Afternoon '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Boa noite  '+name;
+            greet = 'Good Evening  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
@@ -124,7 +124,7 @@ function dispalyGreetings(today){
 
     function dispalyClock(today) {
 
-        var hour = padZeros(twentyFourHour(today.getHours()));
+        var hour = padZeros(twelveHour(today.getHours()));
         var minutes = padZeros(today.getMinutes());
         var seconds = padZeros(today.getSeconds());
        
@@ -170,5 +170,3 @@ function dispalyGreetings(today){
 
 </body>
 </html>
-
-
